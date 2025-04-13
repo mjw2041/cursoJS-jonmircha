@@ -1,0 +1,49 @@
+
+WEB:
+   Herramientas
+   https://finviz.com/screener.ashx?v=131&o=country
+
+   Tutoriales 
+   https://www.youtube.com/watch?v=IdY2_cUMotM
+
+   Market Cap Ordenamiento por tamaño
+
+                               Beneficio Neto 
+   ROA = Retorn on Asset --->  --------------     
+                                  Activos
+
+
+   
+   
+   P/E Ration ( PER ) = Price to Earnings Ratio = --->  Capitalizacion Bursatil
+                                                       -------------------------
+                                                          Beneficio neto Total 
+
+      Entre 20-25 --- Ok
+            > 25  --- Caro
+            < 20  --- Barato
+
+   
+                                Activos corrientes - Inventario
+   Quick Ratio --- Test Acido = -------------------------------
+                                        Pasivos Corrientes       
+   
+   Mira la capacidad de una empresa para cumplir con sus obligaciones a
+   corto plazo con sus activos mas liquidos y por lo tanto lo excluye 
+   de sus activos circulantes. 
+
+                            Pasivos Total
+   Debt /  Equity Ratio  =  -------------
+                            Patrimonio Neto  
+   
+
+   La solvencia: se refiere a la capacidad de una empresa para cumplir con la deudas a 
+   largo plazo  y continuar operando en el futuro. 
+
+   Ratio de endeudamiento: indica el grado de apalancamiento finaciero que utiliza la empresa
+   e incluye tanto la deuda a corto plazo como a largo plazo.
+
+
+
+
+                                                                      

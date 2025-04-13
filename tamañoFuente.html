@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Tamaño de Letra</title>
+    <link rel="stylesheet" href="./CSS/tamañoFuente.css">
+</head>
+<body>
+
+    <h1>Control de Tamaño de Letra</h1>
+    <div>
+        <label for="tamaño-fuente">Elige el tamaño de la fuente: </label>
+        <input type="range" id="tamaño-fuente" min="10" max="50" value="20">
+        <span id="valor-fuente">20</span> px
+    </div>
+
+    <div class="contenido">
+        <p>Este es un 1er párrafo cuyo tamaño de letra se puede cambiar.</p>
+    </div>
+
+    <div class="contenido">
+        <p>Este es un párrafo cuyo tamaño de letra se puede cambiar.</p>
+    </div>
+
+    <div class="contenido">
+        <p>Este es un 2do párrafo cuyo tamaño de letra se puede cambiar.</p>
+    </div>
+    <script>    
+        // Obtener los elementos
+        const inputRango = document.getElementById("tamaño-fuente");
+        const valorFuente = document.getElementById("valor-fuente");
+        const contenido = document.querySelector(".contenido");
+        const inputColor = document.getElementById("color-fuente");
+
+        // Función para actualizar el tamaño de la fuente
+        inputRango.addEventListener("input", function() {
+            const tamaño = inputRango.value;
+            valorFuente.textContent = tamaño;  // Actualizar el valor mostrado
+            contenido.style.fontSize = `${tamaño}px`;  // Cambiar el tamaño de la fuente
+        });
+
+        // Función para actualizar el color de la fuente
+        inputColor.addEventListener("input", function() {
+            const color = inputColor.value;
+            contenido.style.color = color;  // Cambiar el color de la fuente
+        });
+    </script>
+    
+
+</body>
+</html>
+

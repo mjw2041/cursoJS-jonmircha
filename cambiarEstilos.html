@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipular Clases</title>
+    <style>
+        .clase-1 {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .clase-2 {
+            font-size: 20px;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <p id="parrafo" class="clase-1">Este es un párrafo con clase dinámica.</p>
+    <button onclick="cambiarClase()">Cambiar clase</button>
+
+    <script>
+        function cambiarClase() {
+            var parrafo = document.getElementById("parrafo");
+            parrafo.classList.toggle("clase-2"); // Cambia entre clase-1 y clase-2
+        }
+    </script>
+</body>
+</html>

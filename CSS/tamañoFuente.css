@@ -1,0 +1,32 @@
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #3498db;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilo para el control de tamaño de letra */
+#tamaño-fuente {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Estilos del contenido cuyo tamaño de letra se cambiará */
+.contenido {
+  font-size: 20px; /* Tamaño inicial de la fuente */
+  text-align: center;
+  padding: 20px;
+  transition: font-size 0.3s ease;
+}
+
+/* Mostrar el valor del tamaño de la fuente */
+#valor-fuente {
+  font-weight: bold;
+}

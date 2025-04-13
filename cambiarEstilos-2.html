@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Parámetros Dinámicos</title>
+    <style>
+        p {
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <p id="parrafo">Este es un párrafo cuya fuente se puede cambiar dinámicamente.</p>
+    <button onclick="cambiarEstilos()">Cambiar estilo</button>
+
+    <script>
+        function cambiarEstilos() {
+            var parrafo = document.getElementById("parrafo");
+            parrafo.style.fontSize = "20px";  // Cambiar el tamaño de la fuente
+            parrafo.style.color = "#3498db";  // Cambiar el color
+        }
+    </script>
+</body>
+</html>
