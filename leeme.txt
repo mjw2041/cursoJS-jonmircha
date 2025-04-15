@@ -20,3 +20,4 @@ Crear subdirectorio
    -- git branch -M main
    -- git pull
    -- git push --set-upstream origin master ( sube a Git Hub crea un pull request )
+   -- git push comun
