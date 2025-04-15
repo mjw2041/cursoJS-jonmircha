@@ -22,3 +22,13 @@ Crear subdirectorio
    -- git push --set-upstream origin master ( sube a Git Hub crea un pull request )
    -- git push ( comun ) ( si los branch no tiene el mismo nombre no usar)
 
+Clonar un Repositorio 
+git clone <nombre del repositorio >
+cd <nombre-del-repositorio>
+git checkout -b <nombre-de-tu-rama>  # Opcional: crear y cambiar a una nueva rama
+# Editar el archivo con tu editor de texto
+git add <nombre-del-archivo>         # O git add . para agregar todos los cambios
+git commit -m "<Tu mensaje descriptivo>"
+git push origin <nombre-de-tu-rama>  # O git push origin main/master si trabajaste en la rama principal
+
+
