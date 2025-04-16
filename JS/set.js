@@ -22,4 +22,29 @@ set2.add(false)
 set2.add(true)
 set2.add({})
 
+
+console.log(set2)
+console.log("Recorriendo set")
+for (item of set) {
+    console.log(item)
+}
+console.log("Recorriendo set2")
+
+set2.forEach(item=>console.log(item))
+
+/**
+ *  Para acceder a un elemento de set. primero lo tengo que convertir a Array
+ */
+
+var arrayFromSet = Array.from(set)
+console.log(arrayFromSet)
+console.log(arrayFromSet[1])
+
+set.delete("HOLA")
+console.log(set)
+
+console.log(set.has(1)) /* True si existe el valor entreparentesis */
+console.log(set.has(0))
+
+set.clear(set2) /* Limpiarlo */
 console.log(set2)
