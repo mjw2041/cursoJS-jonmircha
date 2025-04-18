@@ -7,7 +7,7 @@
  * 
  */
 
-let mapa = new Map;
+const mapa = new Map;
 
 mapa.set("nombre", "Maxi") /* Agregar elemento */
 mapa.set("apellido", "Weihmuller")
@@ -19,8 +19,34 @@ console.log(mapa.size)
 console.log(mapa.has("nombre"))  /* true si existe la llave */
 console.log(mapa.has("correo"))
 console.log(mapa.get("edad")) /* devuelve el valor de la llave */
-mapa.set("edad", 52 ) /* Sobrescribir la llave */
+mapa.set("edad", 52 ) /* Sobrescribir o la llave  o agregar una nueva llave*/
 console.log(mapa.get("edad")) /* devuelve el valor de la llave */
 
 mapa.delete("apellido")
 console.log(mapa)
+
+mapa.set(19, "diecinueve")
+mapa.set(true, "Verdadero")
+mapa.set({}, {})
+mapa.set(null, "Nulo")
+
+for ([llave, valor] of mapa) {
+      console.log(` llave ${llave} ${valor}` );    
+}
+
+
+const mapa2 = new Map ([["nombre","kEnAi"], 
+                       ["edad", 7],
+                       ["animal", "Perro"],
+                       [null, "Nulo"]  
+])
+
+console.log(mapa2)
+
+// crear una array con las llaves //
+const llavesMapa2 = [...mapa2.keys()]
+// crear una array con las llaves //
+const valoresMapa2 = [...mapa2.values()]
+
+console.log("llaves", llavesMapa2)
+console.log("valores", valoresMapa2 )
