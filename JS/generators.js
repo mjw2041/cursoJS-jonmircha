@@ -1,3 +1,15 @@
+/**
+ * 
+ *   Un generador en JavaScript es un tipo especial de función que puede pausar y
+ *   reanudar su ejecución. Es muy útil para controlar flujos, crear secuencias, 
+ *   manejar recursos paso a paso o incluso trabajar con procesos asincrónicos de forma más clara.
+ *   Usa la palabra clave yield para pausar y devolver un valor. 
+ *   Podés reanudar la ejecución desde donde quedó usando .next().
+ *   Retorna un iterador (objeto que implementa el protocolo de iteración).
+ *  
+ */
+
+
 console.log("generators");
 /* un gnerador es una funcion que puede ser pausada y reanudada en cualquier 
    momento, se utiliza para crear iteradores de manera sencilla.*/
@@ -29,3 +41,34 @@ console.log(array); // se imprime el array con los valores de los yield.
 array.forEach((element) => {
       console.log(element); // se recorre el array y se imprime cada elemento.
 });
+
+
+function cuadrador(valor) {      
+      setTimeout(()=> {
+                  return  console.log({ valor, 
+                                    resultado: valor*valor})
+            }, Math.random()*1000)      
+}
+
+
+function* generador() {
+      console.log("Inicio Funcion")
+      yield cuadrador(0)
+      yield cuadrador(1)
+      yield cuadrador(2)
+      yield cuadrador(3)
+      yield cuadrador(4)
+      yield cuadrador(5)
+      yield cuadrador(6)
+      console.log("Finaliza Funcion")
+
+}      
+
+let  gen = generador();
+
+   console.log("comienza recorrido")
+
+
+for ( let g of gen ) {
+      console.log(g)
+}
