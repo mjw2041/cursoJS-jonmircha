@@ -16,3 +16,65 @@ console.log(document.querySelectorAll(".border-grey")) // Selector por Clase  --
 console.log(document.querySelectorAll("#cabecera")) // Selector por ID  -- Devuelve un Node List
 /*console.log(document.querySelectorAll(["name =nombreCabecera"])) // Selector por name  -- Devuelve un Node List*/
 console.log(document.querySelectorAll('[name="nombreCabecera"]')); // Selector por atributo name
+
+const $elemento = document.getElementById("cabecera")
+console.log($elemento.children) //Devuelve los elementos hijos que contiene ese nodo HTTPColection
+console.log($elemento.parentElement) // Devuelve el Elemento Padre
+
+const lista1 = document.getElementsByClassName("border-grey")
+const lista2 = document.querySelectorAll(".border-grey")
+
+console.log(lista1)
+console.log(lista2)
+
+/* 
+   NodeList no es dinamico, si modifico los valores tengo que volver a recargar
+   HTTPColection si es dinamico, cambia a medida que voy modificando
+*/
+
+/* Para covertir un httpColection a aray*/
+console.log("Convertir a ARRAY")
+const lista1Array = [...lista1]
+lista1Array.forEach((el)=>{
+     console.log(el)
+} )
+
+/* Creacion de Elementos */
+const titulo2 = document.createElement("h2") // Crear un elemento
+const textoTitulo2 = document.createTextNode("Nuevo texto Creado para el Video"); // Crear Texto
+const comentario = document.createComment("ComentarioRamdon")
+
+/*
+  clobar node
+*/
+
+const articulo = document.querySelector('article')
+const articuloClone = articulo.cloneNode(true) 
+const estaEnPagina = articuloClone.isConnected; // true si esta en el html, caso contrario false
+
+
+/* insertar en el html */
+const $section = document.getElementById("section")
+/* $section.appendChild(articuloClone)*/
+// $section.insertAdjacentElement('beforebegin', articuloClone)
+
+/* Insertar el nodo */
+// $section.append(titulo2)
+
+
+/* Insertar Texto sin etiqueta */
+//$section.insertAdjacentText('beforebegin', " ***** Texto insertado Directamente ****")
+
+/* Insertar un texto HTML */
+//$section.insertAdjacentHTML('beforebegin', "<H3> Texto HTML insertado Directamente </H3>")
+
+// $section.remove() // Eliminar una seccion 
+
+/* Modificar el texto */
+// $section.innerHTML = '<h3> Nuevo Titulo </h3>'
+
+$textoSector = $section.outerHTML
+console.log("Texto Seccion " , $textoSector) // Saca a una variable lo que hay en un nodo
+
+// Obtener atributos
+console.log("Atributos " , $section.getAttributes('id')) // Saca a una variable lo que hay en un nodo
