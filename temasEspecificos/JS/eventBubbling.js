@@ -77,4 +77,12 @@ $textoSector = $section.outerHTML
 console.log("Texto Seccion " , $textoSector) // Saca a una variable lo que hay en un nodo
 
 // Obtener atributos
-console.log("Atributos " , $section.getAttributes('id')) // Saca a una variable lo que hay en un nodo
+let atributos = $elemento.getAttribute('id')
+console.log("Atributos " , atributos ) // Saca a una variable lo que hay en un nodo
+
+$elemento.setAttribute('id', 'cabeceraNueva')
+atributos = $elemento.getAttribute('id')
+console.log("Despues de Cambio Atributos " , atributos ) // Saca a una variable lo que hay en un nodo
+
+let clases = $section.classList();
+console.log("Clases " , clases ) 
