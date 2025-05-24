@@ -5,11 +5,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Event Bubbing</title>
       <link rel="stylesheet" href="./CSS/eventBubbling.css">
+       <script src="./JS/eventBubbling.js"></script> 
+       <!-- defer me asegura que el scripts se corre cuando se cargo todo el HTML-->
 </head>
 <body>
     <header id="cabecera" class = "border-grey" name="nombreCabecera">
       <h1>Mi web/blog para testear con el DOM</h1>
     </header>  
+
     <nav>
       <ul class ="border-grey">
             <li><a href="#">LINK 1</a></li>
@@ -19,9 +22,45 @@
     </nav>
     <main id="main">
       <!--beforebegin -->
+      <section class = "border-grey">
+            <!-- no se utiliza esta forma --> 
+            <h2  onclick="clickTitulo()"  id="tituloForm"> Formulario del registro</h2>           
+            <h3  id="ingreseDatos"> Ingrese los Datos</h3>           
+            <form clase="border-grey register-form">
+                  <input type="text" name="name" placeholder="Nombre"/> 
+                  <input type="text" name="email" placeholder="Apellido"/> 
+                  <input type="password" name="password" placeholder="Contraseña"/> 
+                  <button>Registrarme</button>
+            </form>
+            <h3 id="cofirmardatos"> Confirmar los datos ingresados</h3>
+      </section>
       <section id="section" class="border-grey">
             <!--afterbegin -->
-            <h2>Titulo de la seccion</h2>
+            <h2>Blog</h2>
+            <article class="border-grey">
+                  <h3>Titulo del articulo</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero commodi, 
+                  suscipit nam reprehenderit, dolores, voluptas veritatis eligendi iusto facere 
+                  modi est corporis quo culpa. Aliquid corrupti molestias illum ab debitis soluta 
+                  ipsam amet incidunt, recusandae excepturi nam ullam sequi explicabo sapiente 
+                  repellat deleniti ex numquam obcaecati quidem eveniet distinctio in.</p>
+            </article> 
+            <article class="border-grey">
+                  <h3>Titulo del articulo</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero commodi, 
+                  suscipit nam reprehenderit, dolores, voluptas veritatis eligendi iusto facere 
+                  modi est corporis quo culpa. Aliquid corrupti molestias illum ab debitis soluta 
+                  ipsam amet incidunt, recusandae excepturi nam ullam sequi explicabo sapiente 
+                  repellat deleniti ex numquam obcaecati quidem eveniet distinctio in.</p>
+            </article> 
+            <article class="border-grey">
+                  <h3>Titulo del articulo</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero commodi, 
+                  suscipit nam reprehenderit, dolores, voluptas veritatis eligendi iusto facere 
+                  modi est corporis quo culpa. Aliquid corrupti molestias illum ab debitis soluta 
+                  ipsam amet incidunt, recusandae excepturi nam ullam sequi explicabo sapiente 
+                  repellat deleniti ex numquam obcaecati quidem eveniet distinctio in.</p>
+            </article> 
             <article class="border-grey">
                   <h3>Titulo del articulo</h3>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero commodi, 
@@ -37,6 +76,6 @@
     <footer>
             <p>2021 Desarollo Util</p>
     </footer>
-    <script src="./JS/eventBubbling.js"></script>
+   
 </body>
 </html>

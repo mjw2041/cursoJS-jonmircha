@@ -34,3 +34,4 @@ git push origin <nombre-de-tu-rama>  # O git push origin main/master si trabajas
 Probando desde la nueva notebook
 No estaria andando, creo que ahora si
 
+   

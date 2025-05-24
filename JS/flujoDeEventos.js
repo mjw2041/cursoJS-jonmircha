@@ -3,6 +3,7 @@ console.log("Hola desde flujoDeEventos.js");
 const $divEventos = document.querySelectorAll(".eventos-flujo div");
 console.log($divEventos);
 
+
 function flujoEventos(e) {
       console.log(`Hola te saluda desde ${this.className} el click lo origino ${e.target.className}`);      
 }

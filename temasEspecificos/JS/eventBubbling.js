@@ -1,8 +1,7 @@
 console.log("Hola desde Event Bubbing")
 /* 
      URL: https://www.youtube.com/watch?v=WtTLkE1SQFg&t=378s --- 😎 Leyendo HTML con SELECTORES desde Javascript 😄 DOM
-     URL: https://www.youtube.com/watch?v=03eid8Lc8V8&t=102s --- CÓMO manejar EVENTOS en Javascript 🤔 Event Listeners 😄 DOM
-     URL: https://www.youtube.com/watch?v=xlci1S08Cww&list=LL
+     URL: https://www.youtube.com/watch?v=03eid8Lc8V8&t=129s&ab_channel=Desarrollo%C3%9Atil --- CÓMO manejar EVENTOS en Javascript 🤔 Event Listeners 😄 DOM
 */
 console.log(document)
 console.log(document.getElementById("cabecera")) // Selector por Id
@@ -84,5 +83,66 @@ $elemento.setAttribute('id', 'cabeceraNueva')
 atributos = $elemento.getAttribute('id')
 console.log("Despues de Cambio Atributos " , atributos ) // Saca a una variable lo que hay en un nodo
 
-let clases = $section.classList();
-console.log("Clases " , clases ) 
+let clases = $section.classList;
+console.log("Clases (listado)" , clases )  // Muestra las clases de un componente
+
+
+$section.className +="nuevaClase" // Agregarle algo al titulo de la clase
+console.log("Clases (Agregar texto)" , clases )
+
+$section.className ="nuevaClase" // Cambiarle el nombre
+console.log("Clases (cambio nombre)" , clases )
+
+$section.classList.add("border_grey") //agregar una clase
+console.log("Clases (agregar clase) " , clases );
+
+console.log("Clases usando for...of:");
+let indice = 0
+for (let clase of clases) {  // Recorrer
+  indice = indice + 1;
+  console.log(` Clase:" ,${indice}, ${clase}`);
+  
+}
+
+$section.classList.remove("nuevaClase") //Eliminar una clase
+console.log("Clases (eliminar clase) " , clases );
+
+$section.classList.toggle("nuevaClase") //Interruptor --> si no lo tiene lo agrega si lo tiene lo saca
+console.log("Clases (togle primera vez) " , clases );
+
+$section.classList.toggle("nuevaClase") //Interruptor --> si no lo tiene lo agrega si lo tiene lo saca
+console.log("Clases (togle segunda vez) " , clases );
+
+/**
+ *  Manejador de Eventos
+ */
+
+const clickTitulo = (e) => {
+     console.log("El usuario hizo click en el titulo princ")
+     console.log("Objeto Event **** ", e)
+     console.log(e)
+}
+
+function clickTitulo3() {
+     console.log("El usuario hizo click en el Sub-titulo")
+}
+
+function clickTitulo4() {
+     console.log("El usuario hizo click en el mensaje Confirmacion")
+}
+
+const $titulo3 = document.getElementById("ingreseDatos")
+console.log("Titulo 3", $titulo3)
+$titulo3.onclick = clickTitulo3 /* ojo sin parentesis */
+
+const $titulo4 = document.getElementById("cofirmardatos")
+console.log("Titulo 4", $titulo4)
+$titulo4.addEventListener("click", clickTitulo4); /* ojo sin parentesis */
+
+$titulo4.removeEventListener("click", clickTitulo4); // Remover el event Listener
+
+document.addEventListener("DOMContentLoaded", () => {
+      console.log("El documento se ha cargado") ;
+});
+
+
