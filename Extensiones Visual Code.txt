@@ -1,0 +1,24 @@
+Extensiones JS
+==============
+GitLens
+Thunder Client
+Better Comments
+Code Runner
+CodeSnap
+Fluent Icons
+Image Preview
+Indent-rainbow
+Intellicode
+Intellicode -- Api Usage Example
+Live Server
+Lorem Impsum
+Markdown All in One
+One Dark Pro
+Palenight Theme
+Path Intellisense
+PeakCok
+Symbols
+CodeGPT: Chat & AiAgents
+GitHub Copilot
+GitHub Copilot Chat
+HTML Bollerplate
