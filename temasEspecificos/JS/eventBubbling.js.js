@@ -145,4 +145,42 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("El documento se ha cargado") ;
 });
 
+const enviarFormulario = (event) => {     
+     event.preventDefault() /* Se controla el comportamiento por defecto */
+     console.log("**** evento **** ")
+     console.log(event)     
+     const {name, email, password} = event.target
+     /* Asignacion Desestruturada */
+     console.log( "Nombre: ", name.value, 
+                  "Email: ", email.value, 
+                  "Password: ", password.value )
+     if (name.value.length === 0 ) alert("El nombre no es valido")
+     /* Accedo a los que tiene cargarlo los imput */
+} 
+
+const $form = document.getElementById("formulario")
+$form.addEventListener("submit", enviarFormulario)
+
+const $tituloForm = document.querySelector("#tituloForm"),
+      $cabecera = document.querySelector("#cabecera")
+
+$tituloForm.addEventListener("click", (event) => {
+     /*console.log("Propiedad Bubble: ", event.bubbles, event.cancelBubble) */
+     /*  event.cancelBubble ---> nos indica si el buble esta cancelado 
+         event.bubbles     ----> nos indica si esta en modo buble
+     */
+     /*event.stopPropagation(); /* Para la propagracion  */
+     /*console.log("Propiedad Bubble: ", event.bubbles, event.cancelBubble) */
+     console.log("CLICK EN EL tituloForm")
+})        
+
+$cabecera.addEventListener("click", () => {
+     console.log("CLICK EN EL cabecera")
+},{
+     capture: true 
+     /* Se evalua de arriba hacia abajo */
+
+})      
+
+
 

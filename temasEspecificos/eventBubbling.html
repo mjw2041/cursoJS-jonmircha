@@ -5,8 +5,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Event Bubbing</title>
       <link rel="stylesheet" href="./CSS/eventBubbling.css">
-       <script src="./JS/eventBubbling.js"></script> 
+       <!-- <script defer src="./JS/eventBubbling.js"></script>  -->
        <!-- defer me asegura que el scripts se corre cuando se cargo todo el HTML-->
+       <script defer src="./JS/eventBubbling.js.js"></script>
 </head>
 <body>
     <header id="cabecera" class = "border-grey" name="nombreCabecera">
@@ -22,15 +23,15 @@
     </nav>
     <main id="main">
       <!--beforebegin -->
-      <section class = "border-grey">
+      <!--<section id="" class = "border-grey">-->
             <!-- no se utiliza esta forma --> 
-            <h2  onclick="clickTitulo()"  id="tituloForm"> Formulario del registro</h2>           
-            <h3  id="ingreseDatos"> Ingrese los Datos</h3>           
-            <form clase="border-grey register-form">
+            <h2 onclick="clickTitulo()"  id="tituloForm"> Formulario del registro</h2>           
+            <h3 id="ingreseDatos"> Ingrese los Datos</h3>           
+            <form id = "formulario" clase="border-grey register-form">
                   <input type="text" name="name" placeholder="Nombre"/> 
-                  <input type="text" name="email" placeholder="Apellido"/> 
+                  <input type="text" name="email" placeholder="email"/> 
                   <input type="password" name="password" placeholder="Contraseña"/> 
-                  <button>Registrarme</button>
+                  <button> Registrarme</button>
             </form>
             <h3 id="cofirmardatos"> Confirmar los datos ingresados</h3>
       </section>
@@ -70,12 +71,11 @@
                   repellat deleniti ex numquam obcaecati quidem eveniet distinctio in.</p>
             </article> 
             <!--beforeeend -->
-       </section>
-       <!-- afterend-->
+      /section>
+      <!-- afterend-->
     </main>
     <footer>
             <p>2021 Desarollo Util</p>
     </footer>
-   
 </body>
 </html>
