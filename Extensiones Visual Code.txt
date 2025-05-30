@@ -1,24 +1,25 @@
 Extensiones JS
 ==============
-GitLens
-Thunder Client
-Better Comments
-Code Runner
-CodeSnap
-Fluent Icons
-Image Preview
-Indent-rainbow
-Intellicode
-Intellicode -- Api Usage Example
-Live Server
-Lorem Impsum
-Markdown All in One
-One Dark Pro
-Palenight Theme
-Path Intellisense
-PeakCok
-Symbols
+Better Comments ok
 CodeGPT: Chat & AiAgents
-GitHub Copilot
-GitHub Copilot Chat
-HTML Bollerplate
+Code Runner ok
+CodeSnap ok
+Fluent Icons ok
+GitLens
+Git Lens - Git Supercharged ok
+GitHub Copilot   ok
+GitHub Copilot Chat ok
+HTML Bollerplate pke
+Image Preview ok
+Indent-rainbow ok
+Intellicode ok
+Intellicode -- Api Usage Example ok
+Live Server ok
+Lorem Impsum ok
+Markdown All in ok One
+One Dark Pro ok
+Palenight Theme ok
+Path Intellisense ok
+PeakCok ok
+Symbols ok
+Thunder Client
