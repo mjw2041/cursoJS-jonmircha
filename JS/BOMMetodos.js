@@ -16,16 +16,18 @@ const $btnAbrir = document.getElementById("abrir-ventana"),
 
 console.log($btnCerrar)      
 
+let ventana 
 $btnAbrir.addEventListener("click", e=>{
-    window.open("https://jonmircha.com")  
+    ventana = window.open("https://jonmircha.com")   /* Les asigno la referencia */
 })      
 
 $btnCerrar.addEventListener("click", e=>{
-    window.open("https://jonmircha.com")  
+    /* window.close() /* Cierra la ventana del navegador no es recomendable */
+    ventana.close()
 })      
 
 $btnImprimir.addEventListener("click", e=>{
-      
+      window.print() /* Mandar a Imprimir la pantalla */
 })      
 
 
