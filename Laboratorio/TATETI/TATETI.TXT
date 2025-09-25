@@ -1,0 +1,1 @@
+Es un Tateti simple donde juega el usuario con la maquina.

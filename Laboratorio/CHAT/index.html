@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente de Comunicación HTTP (POST)</title>
+    
+    <link rel="stylesheet" href="styles.css"> 
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>📨 Enviar Mensaje a IP/URL</h1>
+        <form id="mensajeForm">
+            
+            <label for="urlInput">Dirección de Destino (IP/URL + Puerto + Endpoint):</label>
+            <input type="text" id="urlInput" value="http://192.168.1.50:8080/datos" required> 
+
+            <label for="mensajeInput">Mensaje a Enviar:</label>
+            <textarea id="mensajeInput" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+            <button type="submit">Enviar Mensaje (POST)</button>
+        </form>
+
+        <div id="resultado">Esperando envío...</div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,7 @@
+Chat 
+Proyecto Chat desarrollado por Geminis, no esta probado.
+chatHTML.js ---> lo tiene que usar el index
+chatServidor.js ---> supuestamente se tiene que usar en el servidor.
+chatCliente.JS --->  es la rutina sin el agragador del manejo del HTML.
+
+
