@@ -1,3 +1,6 @@
+URL: https://www.youtube.com/watch?v=2SetvwBV-SU&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA
+
+
 https://github.com/mjw2041/cursoJS-jonmircha.git
 
 echo "# cursoJS-jonmircha" >> README.md
