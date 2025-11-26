@@ -3,5 +3,12 @@ Proyecto Chat desarrollado por Geminis, no esta probado.
 chatHTML.js ---> lo tiene que usar el index
 chatServidor.js ---> supuestamente se tiene que usar en el servidor.
 chatCliente.JS --->  es la rutina sin el agragador del manejo del HTML.
+detectarIP ---> Dada una ip trata de ver si existe y se puede comunicar
+// --- Ejemplo de Uso ---
 
+// Prueba tu router en el puerto 80 (HTTP)
+verificarIPTCP('192.168.1.1', 80); 
+
+// Prueba si existe un servidor de archivos en el puerto 445 (SMB)
+verificarIPTCP('192.168.1.5', 445);
 
