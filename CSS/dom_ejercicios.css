@@ -1,3 +1,7 @@
+/* Opción más simple usando una fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap');
+
+
 /* ********** RESET CSS ********** */
 :root{
       /* Variables CSS */
@@ -70,8 +74,15 @@ img {
       bottom: 0;
       width: 100%;
       background-color: var(--second-modal-color);
-      transition: transform .03s ease ;
-      transform: translate(0,-50%);
+      transition: transform 0.3s ease ;
+      /* de arriba */
+      transform: translate(0,-100%);
+      /* de abajo */
+      transform: translate(0,100%);
+      /* de derecha */
+      transform: translate(100%,0);
+      /* de izquierda */
+      transform: translate(-100%,0);
 }
 
 .panel.is-active{
@@ -95,7 +106,7 @@ img {
 }
 
 .menu{
-      width: inherit;
+      width: inherit; /* hereda la altura de su contenedor */
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -119,3 +130,44 @@ img {
       color: var(--second-color);
       background-color: var(--main-modal-color);
 }     
+
+/* RELOJ */
+/*  Mejora Botones */
+button {
+    /* Tipografía y Espaciado */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+
+    /* Apariencia Moderna */
+    border: none; /* Eliminar el borde antiguo */
+    border-radius: 8px; /* Bordes redondeados sutiles */
+    cursor: pointer;
+    text-transform: uppercase; /* Para un look más profesional */
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Transiciones suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+}
+
+
+.digital-clock {
+    /* Aplicamos la fuente */
+    font-family: 'Chakra Petch', monospace; 
+}
+
+/* ********** EVENTOS DEL TECLADO **************/ 
+.stage{
+      display: flex;
+      min-height: 50vh;
+      background-color: var(--second-color);        
+}
+
+.ball{
+      margin:auto;
+      width:4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background-color: var(--main-color);
+}
+
