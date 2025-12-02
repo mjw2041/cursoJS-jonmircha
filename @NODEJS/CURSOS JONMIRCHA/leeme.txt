@@ -1,2 +1,11 @@
 URL 
 https://www.youtube.com/playlist?list=PLvq-jIkSeTUY3gY-ptuqkNEXZHsNwlkND
+
+Repositorio GIT 
+https://github.com/jonmircha/youtube-nodejs
+
+Ubicacion 
+CD C:\@CAPACITACION\cursoJS - JonMirCha\@NODEJS\CURSOS JONMIRCHA\FUNDAMENTOS DE NODE JS\
+
+ultimo video 
+Hola_mundo
